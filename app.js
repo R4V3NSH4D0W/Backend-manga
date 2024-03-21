@@ -8,7 +8,6 @@ const chapterspages=require('./src/routes/chapterPages');
 
 const animeInfo =require('./src/animeRoutes/animeInfo');
 const searchAnime =require('./src/animeRoutes/searchAnime');
-const episodeInfo =require('./src/animeRoutes/episodeInfo');
 const animeSource =require('./src/animeRoutes/animeSource');
 const randomAnime =require('./src/animeRoutes/randomAnime');
 const popularAnime =require('./src/animeRoutes/popularAnime');
@@ -33,7 +32,6 @@ app.use('/api/episodeInfo',episodeInfo);
 app.use('/api/animeSource',animeSource);
 app.use('/api/randomAnime',randomAnime);
 app.use('/api/popularAnime',popularAnime);
-app.use('/api/episodeSource',episodeSource);
 app.use('/api/trendingAnime',trendingAnime);
 
 if(app.get('env')==='development'){
